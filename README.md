@@ -18,8 +18,8 @@ Improving Protein-Protein Interaction Prediction using Protein Language Model an
 
 
 ## Run 
-The ESM2 is available at: https://github.com/facebookresearch/esm
-The STRING Datasets is available at: https://www.string-db.org/
+The ESM2 is available at: https://github.com/facebookresearch/esm.
+The STRING Datasets is available at: https://www.string-db.org/.
 After prepared with suitable environment, you can execute the following command to execute the code with default parameters.
 ~~~
   $ cd KSGPPI
