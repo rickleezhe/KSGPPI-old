@@ -30,7 +30,7 @@ After prepared with suitable environment, you can execute the following command 
 
 
 ## References
-Jun Hu, Zhe Li, Bing Rao, Yang Zhang , Maha A. Thafar and Muhammad Arif. Improving Protein-Protein Interaction Prediction using Protein Language Model and Protein Network Features.
+Jun Hu, Zhe Li, Bing Rao, Maha A. Thafar and Muhammad Arif. Improving Protein-Protein Interaction Prediction using Protein Language Model and Protein Network Features.
 
 ## Contact
 If you have any questions, comments, or would like to report a bug, please file a Github issue.
