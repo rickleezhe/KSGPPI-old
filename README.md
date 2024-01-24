@@ -22,6 +22,8 @@ The ESM2 is available at: https://github.com/facebookresearch/esm.
 
 The STRING Datasets is available at: https://www.string-db.org/.
 
+The NW-align is available at: https://zhanggroup.org/NW-align/.
+
 After prepared with suitable environment, you can execute the following command to execute the code with default parameters.
 ~~~
   $ cd KSGPPI
