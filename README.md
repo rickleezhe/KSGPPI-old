@@ -26,7 +26,7 @@ The NW-align is available at: https://zhanggroup.org/NW-align/.
 
 After prepared with suitable environment, you can execute the following command to execute the code with default parameters.
 ~~~
-  $ cd KSGPPI
+  $ cd KSGPPI-main
   $ python main.py 
 ~~~
 
