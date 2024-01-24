@@ -25,7 +25,7 @@ The STRING Datasets is available at: https://www.string-db.org/.
 After prepared with suitable environment, you can execute the following command to execute the code with default parameters.
 ~~~
   $ cd KSGPPI
-  $ python main.py 30 32 
+  $ python main.py 
 ~~~
 
 ## Tips
