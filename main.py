@@ -100,11 +100,8 @@ def train(trainArgs,nn):
     return metric_mcc
 
 if __name__ == "__main__":
-    if len(sys.argv) > 1:
-        epoch = sys.argv[1]
-        batchsize = sys.argv[2]
-    # epoch = 30
-    # batchsize = 1
+    epoch = 30
+    batchsize = 32
 
     datasetname = 'yeast'
     rst_file = './results/yeast_results.tsv'
