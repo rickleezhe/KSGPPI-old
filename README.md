@@ -28,6 +28,8 @@ After prepared with suitable environment, you can execute the following command 
   $ python main.py 30 32 
 ~~~
 
+## Tips
+This package is only free for academic use.
 
 ## References
 Jun Hu, Zhe Li, Bing Rao, Maha A. Thafar and Muhammad Arif. Improving Protein-Protein Interaction Prediction using Protein Language Model and Protein Network Features.
