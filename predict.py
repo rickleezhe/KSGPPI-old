@@ -13,7 +13,7 @@ def predict_single_data(model, G1, G2, dmap1, dmap2):
 if __name__ == '__main__':
 
     parser = argparse.ArgumentParser()
-    parser.add_argument("-species", "--species", default='multi')
+    parser.add_argument("-species", "--species", default='multispecies')
     parser.add_argument("-seq_file1", "--seq_fa1")
     parser.add_argument("-seq_file2", "--seq_fa2")
     parser.add_argument("-dv", "--device", default='cuda:0')
@@ -36,10 +36,10 @@ if __name__ == '__main__':
     EKS_coding1 = CKSAAP_.return_CKSAAP_Emb_code(seq1, torch.tensor(esm_out1), is_shape_for_3d=True)
     EKS_coding2 = CKSAAP_.return_CKSAAP_Emb_code(seq2, torch.tensor(esm_out2), is_shape_for_3d=True)
 
-    print(EKS_coding1.shape)
-    print(EKS_coding2.shape)
-    print(EKS_coding1)
-    print(EKS_coding2)
+    # print(EKS_coding1.shape)
+    # print(EKS_coding2.shape)
+    # print(EKS_coding1)
+    # print(EKS_coding2)
 
     print(type(EKS_coding2))
 
@@ -75,12 +75,9 @@ if __name__ == '__main__':
     G1 = G1_.unsqueeze(0).to(device)
     G2 = G2_.unsqueeze(0).to(device)
 
-    modelArgs = {}
-    modelArgs['emb_dim'] = 5120
 
-    model = trainArgs['model']
-    model.load_state_dict(torch.load('model/fold_1.pkl'))
-    # attention_model.load_state_dict(torch.load('./model.pkl'))
+    model = KSGPPI(modelArgs).to(device)
+    model.load_state_dict(torch.load('model'+str(args.species)+'/model.pkl'))
 
     prediction = predict_single_data(attention_model, G1, G2, dmap1, dmap2)
     print(f'seq1: {name1},seq2: {name2}, Prediction: {prediction}')
