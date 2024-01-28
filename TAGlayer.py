@@ -29,8 +29,8 @@ class Convs(nn.Module):
 class KSGPPI(torch.nn.Module):
     def __init__(self, args):
         super(KSGPPI, self).__init__()
-        self.embedding_size = args['emb_dim']
-        self.drop = args['dropout']
+        self.embedding_size = 5120
+        self.drop = 0.2
         self.Convs2 = Convs(self.embedding_size)
         self.fc_seqg = torch.nn.Linear(228, 128)
 
