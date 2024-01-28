@@ -2,32 +2,31 @@
 Improving Protein-Protein Interaction Prediction using Protein Language Model and Protein Network Features.
 
 ## Pre-requisite:
-    - Python3,Pytorch
-    - numpy
-    - pandas
-    - sklearn
+    - Python3 , Pytorch, Java, Anaconda3
     - networkx
     - esm
     - Linux system 
 
 ## Installation:
 
-*Install and configure the softwares of Python3. Please make sure that python3 includes the modules of 'os', 'math', 'numpy', 'random', 'subprocess', 'sys', 'torch' and 'shutil'. If any one modules does not exist, please using 'pip3 install XXXX' command install the python revelant module. Here, "XXXX" is one module name.
-
 *Download this repository at  https://github.com/rickleezhe/KSGPPI for academic use. Then, uncompress it and run the following command lines on Linux System.
 
-
-## Run 
-The ESM2 is available at: https://github.com/facebookresearch/esm.
-
-The STRING Datasets is available at: https://www.string-db.org/.
-
-The NW-align is available at: https://zhanggroup.org/NW-align/.
-
-After prepared with suitable environment, you can execute the following command to execute the code with default parameters.
 ~~~
   $ cd KSGPPI-main
-  $ python main.py 
+  $ chmod 777 ./install.sh
+  $ ./install.sh
+~~~
+
+* If the package cannot work correctly on your computational cluster, you should install the dependencies via running the following commands:
+
+~~~
+  $ cd KSGPPI-main
+  $ pip install -r requirements.txt
+~~~
+
+## Run example
+~~~
+  $ python predict.py -seq_file1 example/P21346.fa -seq_file2 example/P00955.fa
 ~~~
 
 ## Tips
